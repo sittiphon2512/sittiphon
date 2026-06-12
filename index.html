@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my sotifer(tailwind)</title>
+    <!-- copy from google tailwind cdn -->
+    <!-- ต้องการใช้tailwind.cssต้องกำหนดทุกโปรเจค -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- ต้องการเชื่อมเรียกใช้icon ฟรี -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <div class="bg-black fixed inset-0 -z-10"></div>
+    <div class="text-white p-4 min-h-screen w-full">
+        <!--ส่วนหัว header-->
+        <div class="flex flex-col items-center">
+            <h1 class="text-2xl m-2">My Spotifer</h1>
+            <img class="w-[100px] rounded-full" src="https://picsum.photos/200" alt="">
+            <button class="cursor-pointer mt-4 bg-slate-400 px-4 py-1.5 rounded-3xl">edit profile</button>
+        </div>
+        <!-- ข้อมูลตัวเลข -->
+        <div class="flex justify-around my-4">
+            <div class="text-center w-[100px]">
+                <p>23</p>
+                <p class="text-xs">PLAYLIST</p>
+            </div>
+            <div class="text-center w-[100px]">
+                <p>1500</p>
+                <p class="text-xs">FOLLOWERS</p>
+            </div>
+            <div class="text-center w-[100px]">
+                <p>43</p>
+                <p class="text-xs">FOLLOWING</p>
+            </div>
+        </div>
+
+        <!-- <hr> -->
+        <!-- ส่วนเพลย์ลิส main -->
+        <h1 class="text-xl font-bold">playlists</h1>
+
+
+        <div class="flex items-center my-2 gap-3">
+            <img class="w-[40px] rounded-md" src="https://picsum.photos/200" alt="">
+            <div class="w-full ml-2">
+                <p>Allie in the sea</p>
+                <p class="text-xs">100 likes</p>
+            </div>
+        </div>
+
+        <!--  ---------------------->
+        <div class="flex item-center my-2 gap-3">
+            <img class="w-[40px] rounded-md" src="https://picsum.photos/400" alt="">
+            <div class="w-full ml-2">
+                <p>Roadtrip</p>
+                <p class="text-xs">4 likes</p>
+            </div>
+        </div>
+
+        <div class="flex item-center my-2 gap-3">
+            <img class="w-[40px] rounded-md" src="https://picsum.photos/500" alt="">
+            <div>
+                <p>Study</p>
+                <p class="text-xs">5 likes</p>
+            </div>
+        </div>
+
+<div>
+ <p class="text-sm">See all playlists</p> 
+
+</div>
+
+        <!-- ส่วนหางหรือล่าง footer -->
+        <div class="flex justify-around bg-slate-900 fixed bottom-0 w-full py-2">
+            <div class="flex flex-col items-center flex-1">
+                <i class="fa-regular fa-house"></i>
+                <p>home</p>
+            </div>
+            <div class="flex flex-col items-center flex-1">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <p>seach</p>
+            </div>
+            <div class="flex flex-col items-center flex-1">
+                <i class="fa-solid fa-book-open"></i>
+                <p>library</p>
+            </div>
+        </div>
+</body>
+
+</html>
